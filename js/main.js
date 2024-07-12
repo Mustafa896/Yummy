@@ -2,7 +2,7 @@ let foodData = document.getElementById("foodData");
 let searchContainer = document.getElementById("search");
 let submitBtn;
 function openNav() {
-    $(".side-nav").animate({
+    $(".side-box").animate({
         left: 0
     }, 500);
 
@@ -17,8 +17,8 @@ function openNav() {
 }
 
 function closeNav() {
-    let navMenuWidth = $(".side-nav .nav-menu").outerWidth();
-    $(".side-nav").animate({left: - navMenuWidth}, 500);
+    let navMenuWidth = $(".side-box .nav-menu").outerWidth();
+    $(".side-box").animate({left: - navMenuWidth}, 500);
 
     $(".open-close-icon").removeClass("fa-x");
     $(".open-close-icon").addClass("fa-align-justify");
@@ -29,8 +29,8 @@ function closeNav() {
 
 closeNav();
 
-$(".side-nav .nav-head i.open-close-icon").click(function () {
-    if ($(".side-nav").css("left") == "0px") {
+$(".side-box .nav-head i.open-close-icon").click(function () {
+    if ($(".side-box").css("left") == "0px") {
         closeNav();
     } else {
         openNav();
