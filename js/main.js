@@ -45,7 +45,7 @@ function showSearchInputs() {
         </div>
         <div class="col-md-6">
             <input onkeyup="searchByFLetter(this.value)" type="text" class="form-control bg-transparent text-white" maxlength="1" placeholder="Search By Meal First Letter">
-            <!-- maxlength attribute specifies the maximum number of characters allowed in the <input> element. -->
+            
         </div>
     </div>`
     foodData.innerHTML = ""
